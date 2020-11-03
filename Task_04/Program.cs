@@ -25,30 +25,41 @@
  */
 
 using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+using System.Globalization;
 
-namespace Task_04 {
-	class Program {
-		static void Main(string[] args) {
-			// TODO : Сменить локаль на "ru-RU" для ввода чисел с плавующей точкой.
+namespace Task_04
+{
+    class Program
+    {
+        static void Main()
+        {
+            CultureInfo.CurrentCulture = new CultureInfo("ru-RU");
+            double x, y;
+            double.TryParse(Console.ReadLine(), out x);
+            double.TryParse(Console.ReadLine(), out y);
+            Console.WriteLine($"{G(x, y):f2}");
+            Console.ReadLine();
+        }
 
-			double x, y;
-			// TODO : Считать координаты точки.
-
-
-			Console.WriteLine(G(x, y));
-
-		}
-
-		public static double G(double x, double y) {
-			double res = 0;
-
-			// TODO : Реализовать вычисление функции G.
-
-			return res;
-		}
-	}
+        public static double G(double x, double y)
+        {
+            double res = 0;
+            if (0 < x && x < y)
+            {
+                res = x + Math.Sin(y);
+            }
+            else
+            {
+                if (x < 0 && x > y)
+                {
+                    res = y - Math.Cos(x);
+                }
+                else
+                {
+                    res = 0.5 * x * y;
+                }
+            }
+            return res;
+        }
+    }
 }

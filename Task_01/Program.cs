@@ -21,31 +21,31 @@
  */
 
 using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
-namespace Task_01 {
-	class Program {
-		static void Main(string[] args) {
-			int l;
-			// TODO : Считать l;
+namespace Task_01
+{
+    class Program
+    {
+        static void Main()
+        {
+            int l;
+            // TODO : Считать l;
 
-			int result = CalcS(l);
+            int result = CalcS(l);
 
-			// TODO : вывести результат или 0, если его не было получено.
-		}
+            // TODO : вывести результат или 0, если его не было получено.
+        }
 
-		public static int CalcS(int l) {
-			int res = -1;
+        public static int CalcS(int l)
+        {
+            int res = -1;
 
-			// TODO : Написать логику для метода вычисления S и 
-			// если вычислить удалось, поместить в res полученное S.
+            // TODO : Написать логику для метода вычисления S и 
+            // если вычислить удалось, поместить в res полученное S.
 
-			return res;
-		}
+            return res;
+        }
 
 
-	}
+    }
 }

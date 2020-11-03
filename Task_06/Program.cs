@@ -21,26 +21,27 @@
  * */
 
 using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
-namespace Task_06 {
-	class Program {
+namespace Task_06
+{
+    class Program
+    {
 
-		static void Main(string[] args) {
-			int answer = 0;
+        static void Main()
+        {
+            int answer = 0;
 
-			foreach (int level in GetNumbers()) {
-				// TODO : Обработать информацию об очередном этаже. Он лежит в переменной level.
-			}
+            foreach (int level in GetNumbers())
+            {
+                // TODO : Обработать информацию об очередном этаже. Он лежит в переменной level.
+            }
 
-			// TODO : Вывести получееный этаж.
-		}
+            // TODO : Вывести получееный этаж.
+        }
 
-		public static List<int> GetNumbers() {
-			return Console.ReadLine().Split(' ').ToList().ConvertAll((x) => int.Parse(x));
-		}
-	}
+        public static List<int> GetNumbers()
+        {
+            return Console.ReadLine().Split(' ').ToList().ConvertAll((x) => int.Parse(x));
+        }
+    }
 }

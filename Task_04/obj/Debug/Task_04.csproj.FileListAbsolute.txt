@@ -1,0 +1,7 @@
+C:\Users\пк\01module-03seminar-if-switch-for-novoronetskaya\Task_04\bin\Debug\Task_04.exe.config
+C:\Users\пк\01module-03seminar-if-switch-for-novoronetskaya\Task_04\bin\Debug\Task_04.exe
+C:\Users\пк\01module-03seminar-if-switch-for-novoronetskaya\Task_04\bin\Debug\Task_04.pdb
+C:\Users\пк\01module-03seminar-if-switch-for-novoronetskaya\Task_04\obj\Debug\Task_04.csprojAssemblyReference.cache
+C:\Users\пк\01module-03seminar-if-switch-for-novoronetskaya\Task_04\obj\Debug\Task_04.csproj.CoreCompileInputs.cache
+C:\Users\пк\01module-03seminar-if-switch-for-novoronetskaya\Task_04\obj\Debug\Task_04.exe
+C:\Users\пк\01module-03seminar-if-switch-for-novoronetskaya\Task_04\obj\Debug\Task_04.pdb

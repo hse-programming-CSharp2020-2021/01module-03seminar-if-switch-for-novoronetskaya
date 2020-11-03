@@ -23,30 +23,33 @@
  */
 
 using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
-namespace Task_05 {
-	class Program {
-		static void Main(string[] args) {
-			// TODO : Сменить локаль на "ru-RU" для ввода чисел с плавующей точкой.
+namespace Task_05
+{
+    class Program
+    {
+        static void Main()
+        {
+            // TODO : Сменить локаль на "ru-RU" для ввода чисел с плавующей точкой.
 
-			double x;
-			// TODO : Считать точку.
+            double x;
+            double.TryParse(Console.ReadLine(), out x);
+            Console.WriteLine($"{G(x):f2}");
+            Console.ReadLine();
+        }
 
-
-			Console.WriteLine(G(x));
-
-		}
-
-		public static double G(double x) {
-			double res = 0;
-
-			// TODO : Реализовать вычисление функции G.
-
-			return res;
-		}
-	}
+        public static double G(double x)
+        {
+            double res = 0;
+            if (x > 0.5)
+            {
+                res = Math.Sin(Math.PI * (x - 1) / 2);
+            }
+            else
+            {
+                res = Math.Sin(Math.PI / 2);
+            }
+            return res;
+        }
+    }
 }

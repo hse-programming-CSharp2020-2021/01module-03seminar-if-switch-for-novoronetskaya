@@ -18,22 +18,27 @@
  */
 
 using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
-namespace Task_02 {
-	class Program {
-		static void Main(string[] args) {
-			int x;
-			// TODO : Ввести X.
+namespace Task_02
+{
+    class Program
+    {
+        static void Main()
+        {
+            int x;
+            int.TryParse(Console.ReadLine(), out x);
+            Console.WriteLine(Reverse(x));
+        }
 
-			Console.WriteLine(Reverse(x));
-		}
-
-		public static int Reverse(int x) {
-			// TODO : Описать логику метода для получения нового числа.
-		}
-	}
+        public static int Reverse(int x)
+        {
+            int result = 0;
+            while(x > 0)
+            {
+                result = result * 10 + x % 10;
+                x /= 10;
+            }
+            return result;
+        }
+    }
 }
