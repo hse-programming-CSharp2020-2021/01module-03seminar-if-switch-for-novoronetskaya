@@ -35,7 +35,6 @@ namespace Task_05
             double x;
             double.TryParse(Console.ReadLine(), out x);
             Console.WriteLine($"{G(x):f2}");
-            Console.ReadLine();
         }
 
         public static double G(double x)

@@ -38,7 +38,6 @@ namespace Task_04
             double.TryParse(Console.ReadLine(), out x);
             double.TryParse(Console.ReadLine(), out y);
             Console.WriteLine($"{G(x, y):f2}");
-            Console.ReadLine();
         }
 
         public static double G(double x, double y)

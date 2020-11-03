@@ -39,7 +39,7 @@ namespace Task_03
 
         public static bool G(double x, double y)
         {
-            bool res = x > 0 && (x * x + y * y <= 4) && (y <= x);
+            bool res = x >= 0 && (x * x + y * y <= 4) && (y <= x);
             return res;
         }
     }
