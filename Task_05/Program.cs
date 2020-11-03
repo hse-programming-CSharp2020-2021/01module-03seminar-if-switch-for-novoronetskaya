@@ -23,6 +23,7 @@
  */
 
 using System;
+using System.Globalization;
 
 namespace Task_05
 {
@@ -30,10 +31,10 @@ namespace Task_05
     {
         static void Main()
         {
-            // TODO : Сменить локаль на "ru-RU" для ввода чисел с плавующей точкой.
-
+            CultureInfo.CurrentCulture = new CultureInfo("ru-RU");
             double x;
             double.TryParse(Console.ReadLine(), out x);
+            x = x * Math.PI / 180;
             Console.WriteLine($"{G(x):f2}");
         }
 
