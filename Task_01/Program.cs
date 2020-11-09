@@ -30,9 +30,8 @@ namespace Task_01
         {
             int l;
             int.TryParse(Console.ReadLine(), out l);
-            int result = CalcS(l);
+            int result = CalcS(l); 
             Console.WriteLine(result);
-            Console.WriteLine(l);
         }
 
         public static int CalcS(int l)
