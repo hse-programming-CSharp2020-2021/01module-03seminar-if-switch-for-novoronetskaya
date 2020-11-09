@@ -37,10 +37,6 @@ namespace Task_04
             double x, y;
             double.TryParse(Console.ReadLine(), out x);
             double.TryParse(Console.ReadLine(), out y);
-            Console.WriteLine(x);
-            Console.WriteLine(y);
-            x = x * Math.PI / 180;
-            y = y * Math.PI / 180;
             Console.WriteLine($"{G(x, y):f2}");
         }
 
@@ -49,12 +45,14 @@ namespace Task_04
             double res = 0;
             if (0 < x && x < y)
             {
+                y = y * Math.PI / 180;
                 res = x + Math.Sin(y);
             }
             else
             {
                 if (x < 0 && x > y)
                 {
+                    x = x * Math.PI / 180;
                     res = y - Math.Cos(x);
                 }
                 else
