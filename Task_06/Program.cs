@@ -1,4 +1,4 @@
-﻿/*
+/*
  * (***) Трехзначным целым числом кодируется номер аудитории в учебном корпусе. 
  * Старшая цифра обозначают номер этажа, а две младшие –  номер аудитории на 
  * этаже. Из трех аудиторий определить и вывести на экран ту аудиторию, которая 
@@ -21,22 +21,36 @@
  * */
 
 using System;
+using System.Collections.Generic;
+using System.Linq;
 
 namespace Task_06
 {
     class Program
     {
-
+        
         static void Main()
         {
-            int answer = 0;
-
+            int min = -1;
             foreach (int level in GetNumbers())
             {
-                // TODO : Обработать информацию об очередном этаже. Он лежит в переменной level.
+                if (min < 0)
+                {
+                    min = level;
+                }
+                else
+                {
+                    if (level % 100 < min % 100)
+                    {
+                        min = level;
+                    }
+                    else if (min % 100 == level % 100 && level / 100 < min / 100)
+                    {
+                        min = level;
+                    }
+                }
             }
-
-            // TODO : Вывести получееный этаж.
+            Console.WriteLine(min);
         }
 
         public static List<int> GetNumbers()
