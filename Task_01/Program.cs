@@ -29,23 +29,23 @@ namespace Task_01
         static void Main()
         {
             int l;
-            // TODO : Считать l;
-
+            int.TryParse(Console.ReadLine(), out l);
             int result = CalcS(l);
-
-            // TODO : вывести результат или 0, если его не было получено.
+            Console.WriteLine(result);
         }
 
         public static int CalcS(int l)
         {
-            int res = -1;
-
-            // TODO : Написать логику для метода вычисления S и 
-            // если вычислить удалось, поместить в res полученное S.
-
+            int res = l++;
+            while(res % 1111 > 0 && res < 10000)
+            {
+                res += l++;
+            }
+            if(res % 1111 != 0)
+            {
+                res = 0;
+            }
             return res;
         }
-
-
     }
 }
