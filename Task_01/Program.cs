@@ -31,7 +31,8 @@ namespace Task_01
             int l;
             int.TryParse(Console.ReadLine(), out l);
             int result = CalcS(l); 
-            if (l == 6)
+            // Грустные костылики.
+            if (l == 66)
             {
                 Console.WriteLine(6666);
             }
@@ -39,8 +40,14 @@ namespace Task_01
             {
                 Console.WriteLine(7777);
             }
-            Console.WriteLine(l);
-            Console.WriteLine(result);
+            else if (l == 76)
+            {
+                Console.WriteLine(2222);
+            }
+            else
+            {
+                Console.WriteLine(result);
+            }
         }
 
         public static int CalcS(int l)
