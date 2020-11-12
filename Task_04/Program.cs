@@ -37,6 +37,8 @@ namespace Task_04
             double x, y;
             double.TryParse(Console.ReadLine(), out x);
             double.TryParse(Console.ReadLine(), out y);
+            Console.WriteLine(x);
+            Console.WriteLine(y);
             Console.WriteLine($"{G(x, y):f2}");
         }
 
