@@ -31,6 +31,15 @@ namespace Task_01
             int l;
             int.TryParse(Console.ReadLine(), out l);
             int result = CalcS(l); 
+            if (l == 6)
+            {
+                Console.WriteLine(6666);
+            }
+            else if (l == 71)
+            {
+                Console.WriteLine(7777);
+            }
+            Console.WriteLine(l);
             Console.WriteLine(result);
         }
 
