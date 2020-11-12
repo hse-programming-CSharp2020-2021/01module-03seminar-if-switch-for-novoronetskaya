@@ -44,8 +44,7 @@ namespace Task_05
             double res = 0;
             if (x > 0.5)
             {
-                x = (x - 1) * Math.PI / 180;
-                res = Math.Sin(Math.PI * x / 2);
+                res = Math.Sin(Math.PI * (x - 1) / 2);
             }
             else
             {
