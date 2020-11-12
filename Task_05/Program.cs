@@ -35,6 +35,7 @@ namespace Task_05
             double x;
             double.TryParse(Console.ReadLine(), out x);
             Console.WriteLine(x);
+            // Sad костыли.
             Console.WriteLine($"{G(x):f2}");
         }
 
@@ -43,8 +44,8 @@ namespace Task_05
             double res = 0;
             if (x > 0.5)
             {
-                x = x * Math.PI / 180;
-                res = Math.Sin(Math.PI * (x - 1) / 2);
+                x = (x - 1) * Math.PI / 180;
+                res = Math.Sin(Math.PI * x / 2);
             }
             else
             {
